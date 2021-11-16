@@ -24,5 +24,6 @@ describe('2 - Implemente os casos de teste para a função `numbers`', () => {
     expect(numbers([1, 'a', 3])).toBeFalsy();
     // Escreva um teste em que a função recebe [' '] e retorna false
     expect(numbers([' '])).toBeFalsy();
+    // toBeFalsy's Source: https://jestjs.io/docs/using-matchers#truthiness
   });
 }); 
