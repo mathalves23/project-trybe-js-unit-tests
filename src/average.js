@@ -12,8 +12,18 @@
     - average([1, '2']) // Retorno: undefined;
 */
 
-const average = () => {
-  // add your implementation here
+const average = (array) => {
+  if (array === '') {
+    return undefined;
+  } if (!Number.isNaN(array)) {
+    return undefined;
+  }
+  let soma = 0;
+  for (let index of array) {
+    soma += index;
+  }
+  let media = soma / array.length;
+  return Math.round(media);
 };
 
 module.exports = average;
