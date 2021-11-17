@@ -49,3 +49,5 @@ describe('6 - Implemente os casos de teste para a função `productDetails`', ()
     expect(products[1].details.productId.endsWith('123')).toBe(true);
   });
 });
+
+
