@@ -33,8 +33,16 @@
   arrayGenerator('entries', { sum: 3, mult: 2, div: 1, sub: 0 }) // [ [ 'sum', 3 ], [ 'mult', 2 ], [ 'div', 1 ], [ 'sub', 0 ] ]
 */
 
-const calculator = (number1, number2) => {};
+const calculator = (number1, number2) => {
+  let object = {
+    sum: number1 + number2,
+    mult: Math.floor(number1 * number2), // Source: https://www.w3schools.com/js/js_math.asp
+    div: Math.floor(number1 / number2),
+    sub: number1 - number2,
+  };
+  return object;
+};
 
-const arrayGenerator = (type, object) => {};
+const arrayGenerator = (type, object) => Object[type](object); // Source: https://www.w3schools.com/js/js_object_es5.asp
 
 module.exports = { calculator, arrayGenerator };
